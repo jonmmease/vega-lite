@@ -224,7 +224,9 @@
         },
         {
           "name": "brush_tuple_fields",
-          "value": [{"field": "distance", "channel": "x", "type": "R-RE"}]
+          "value": [
+            {"field": "distance", "channel": "x", "type": "R-RE", "index": 0}
+          ]
         },
         {
           "name": "brush_toggle",
@@ -369,7 +371,9 @@
         },
         {
           "name": "brush_tuple_fields",
-          "value": [{"field": "delay", "channel": "x", "type": "R-RE"}]
+          "value": [
+            {"field": "delay", "channel": "x", "type": "R-RE", "index": 0}
+          ]
         },
         {
           "name": "brush_toggle",
@@ -514,7 +518,9 @@
         },
         {
           "name": "brush_tuple_fields",
-          "value": [{"field": "time", "channel": "x", "type": "R-RE"}]
+          "value": [
+            {"field": "time", "channel": "x", "type": "R-RE", "index": 0}
+          ]
         },
         {
           "name": "brush_toggle",

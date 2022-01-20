@@ -288,7 +288,9 @@
         },
         {
           "name": "brush_tuple_fields",
-          "value": [{"field": "distance", "channel": "x", "type": "R"}]
+          "value": [
+            {"field": "distance", "channel": "x", "type": "R", "index": 0}
+          ]
         },
         {
           "name": "brush_translate_anchor",
@@ -639,7 +641,7 @@
         },
         {
           "name": "brush_tuple_fields",
-          "value": [{"field": "delay", "channel": "x", "type": "R"}]
+          "value": [{"field": "delay", "channel": "x", "type": "R", "index": 0}]
         },
         {
           "name": "brush_translate_anchor",
@@ -990,7 +992,7 @@
         },
         {
           "name": "brush_tuple_fields",
-          "value": [{"field": "time", "channel": "x", "type": "R"}]
+          "value": [{"field": "time", "channel": "x", "type": "R", "index": 0}]
         },
         {
           "name": "brush_translate_anchor",
