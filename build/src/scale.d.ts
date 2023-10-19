@@ -485,7 +485,7 @@ export interface Scale<ES extends ExprRef | SignalRef = ExprRef | SignalRef> {
     interpolate?: ScaleInterpolateEnum | ES | ScaleInterpolateParams;
 }
 export declare const SCALE_PROPERTIES: (keyof Scale<any>)[];
-export declare const NON_TYPE_DOMAIN_RANGE_VEGA_SCALE_PROPERTIES: ("reverse" | "base" | "constant" | "clamp" | "padding" | "round" | "zero" | "nice" | "interpolate" | "align" | "domainRaw" | "domainMid" | "domainMax" | "domainMin" | "bins" | "paddingInner" | "paddingOuter" | "exponent")[];
+export declare const NON_TYPE_DOMAIN_RANGE_VEGA_SCALE_PROPERTIES: ("reverse" | "base" | "constant" | "clamp" | "padding" | "round" | "zero" | "interpolate" | "align" | "domainMin" | "domainMax" | "domainMid" | "domainRaw" | "nice" | "bins" | "exponent" | "paddingInner" | "paddingOuter")[];
 export declare function scaleTypeSupportProperty(scaleType: ScaleType, propName: keyof Scale): boolean;
 /**
  * Returns undefined if the input channel supports the input scale property name

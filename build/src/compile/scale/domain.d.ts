@@ -1,3 +1,4 @@
+import type { SignalRef } from 'vega';
 import { ScaleChannel } from '../../channel';
 import { TypedFieldDef } from '../../channeldef';
 import { ScaleType } from '../../scale';
@@ -28,5 +29,5 @@ export declare function mergeDomains(domains: VgNonUnionDomain[]): VgDomain;
  * Return `undefined` otherwise.
  */
 export declare function getFieldFromDomain(domain: VgDomain): string;
-export declare function assembleDomain(model: Model, channel: ScaleChannel): BaseScale;
+export declare function assembleDomain(model: Model, channel: ScaleChannel): SignalRef | import("vega").ScaleData | (string | number | boolean | SignalRef)[];
 //# sourceMappingURL=domain.d.ts.map

@@ -17,7 +17,7 @@ export declare function signalOrValueRef<T>(value: T | SignalRef | ExprRef): {
 } | SignalRef;
 export declare function exprFromSignalRefOrValue<T extends SignalRef>(ref: Value<T> | SignalRef): string;
 export declare function exprFromValueRefOrSignalRef(ref: VgValueRef | SignalRef): string;
-export declare function signalOrStringValue(v: SignalRef | any): any;
+export declare function signalOrStringValue(v: SignalRef | any): string;
 export declare function applyMarkConfig(e: VgEncodeEntry, model: UnitModel, propsList: (keyof MarkConfig<any>)[]): Partial<Record<VgEncodeChannel, VgValueRef | (VgValueRef & {
     test?: string;
 })[]>>;
@@ -41,9 +41,12 @@ export declare function getStyleConfig<P extends keyof MarkDef | keyof AxisConfi
 export declare function sortParams(orderDef: OrderFieldDef<string> | OrderFieldDef<string>[], fieldRefOption?: FieldRefOption): SortFields;
 export type AxisTitleComponent = AxisComponentProps['title'];
 export declare function mergeTitleFieldDefs(f1: readonly FieldDefBase<string>[], f2: readonly FieldDefBase<string>[]): FieldDefBase<string, import("../bin").Bin>[];
-export declare function mergeTitle(title1: Text | SignalRef, title2: Text | SignalRef): any;
+export declare function mergeTitle(title1: Text | SignalRef, title2: Text | SignalRef): SignalRef | Text;
 export declare function mergeTitleComponent(v1: Explicit<AxisTitleComponent>, v2: Explicit<AxisTitleComponent>): {
     explicit: boolean;
-    value: any;
+    value: SignalRef | Text;
+} | {
+    explicit: boolean;
+    value: FieldDefBase<string, import("../bin").Bin>[];
 };
 //# sourceMappingURL=common.d.ts.map

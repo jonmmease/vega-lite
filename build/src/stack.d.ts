@@ -30,8 +30,8 @@ export interface StackProperties {
      */
     impute: boolean;
 }
-export declare const STACKABLE_MARKS: Set<"square" | "area" | "circle" | "image" | "line" | "rect" | "text" | "arc" | "rule" | "trail" | "bar" | "point" | "tick" | "geoshape">;
-export declare const STACK_BY_DEFAULT_MARKS: Set<"square" | "area" | "circle" | "image" | "line" | "rect" | "text" | "arc" | "rule" | "trail" | "bar" | "point" | "tick" | "geoshape">;
+export declare const STACKABLE_MARKS: Set<"square" | "area" | "circle" | "image" | "line" | "rect" | "text" | "point" | "arc" | "rule" | "trail" | "geoshape" | "bar" | "tick">;
+export declare const STACK_BY_DEFAULT_MARKS: Set<"square" | "area" | "circle" | "image" | "line" | "rect" | "text" | "point" | "arc" | "rule" | "trail" | "geoshape" | "bar" | "tick">;
 export declare function stack(m: Mark | MarkDef, encoding: Encoding<string>): StackProperties;
 export {};
 //# sourceMappingURL=stack.d.ts.map

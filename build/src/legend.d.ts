@@ -145,6 +145,6 @@ export interface LegendEncoding {
 }
 export declare const defaultLegendConfig: LegendConfig<SignalRef>;
 export declare const COMMON_LEGEND_PROPERTY_INDEX: Flag<keyof (VgLegend | Legend<any>)>;
-export declare const LEGEND_PROPERTIES: string[];
+export declare const LEGEND_PROPERTIES: ("values" | "type" | "offset" | "columns" | "direction" | "padding" | "title" | "description" | "zindex" | "aria" | "cornerRadius" | "orient" | "format" | "formatType" | "tickCount" | "tickMinStep" | "symbolLimit" | "fillColor" | "strokeColor" | "legendX" | "legendY" | "titleAlign" | "titleAnchor" | "titleBaseline" | "titleColor" | "titleFont" | "titleFontSize" | "titleFontStyle" | "titleFontWeight" | "titleLimit" | "titleLineHeight" | "titleOpacity" | "titleOrient" | "titlePadding" | "gradientLength" | "gradientOpacity" | "gradientThickness" | "gradientStrokeColor" | "gradientStrokeWidth" | "clipHeight" | "columnPadding" | "rowPadding" | "gridAlign" | "symbolDash" | "symbolDashOffset" | "symbolFillColor" | "symbolOffset" | "symbolOpacity" | "symbolSize" | "symbolStrokeColor" | "symbolStrokeWidth" | "symbolType" | "labelAlign" | "labelBaseline" | "labelColor" | "labelFont" | "labelFontSize" | "labelFontStyle" | "labelFontWeight" | "labelLimit" | "labelOpacity" | "labelPadding" | "labelOffset" | "labelOverlap" | "labelSeparation")[];
 export {};
 //# sourceMappingURL=legend.d.ts.map

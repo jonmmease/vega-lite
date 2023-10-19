@@ -34,7 +34,7 @@ export declare function filterTooltipWithAggregatedField<F extends Field>(oldEnc
     filteredEncoding: Encoding<F>;
 };
 export declare function getCompositeMarkTooltip(tooltipSummary: CompositeMarkTooltipSummary[], continuousAxisChannelDef: PositionFieldDef<string>, encodingWithoutContinuousAxis: Encoding<string>, withFieldName?: boolean): Encoding<string>;
-export declare function getTitle(continuousAxisChannelDef: PositionFieldDef<string>): any;
+export declare function getTitle(continuousAxisChannelDef: PositionFieldDef<string>): SignalRef | Text;
 export declare function makeCompositeAggregatePartFactory<P extends PartsMixins<any>>(compositeMarkDef: GenericCompositeMarkDef<any> & P, continuousAxis: 'x' | 'y', continuousAxisChannelDef: PositionFieldDef<string>, sharedEncoding: Encoding<string>, compositeMarkConfig: P): ({ partName, mark, positionPrefix, endPositionPrefix, extraEncoding }: {
     partName: keyof P;
     mark: Mark | MarkDef;

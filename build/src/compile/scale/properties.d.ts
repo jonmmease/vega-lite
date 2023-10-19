@@ -35,9 +35,9 @@ export declare function bins(model: Model, fieldDef: TypedFieldDef<string>): Sig
 };
 export declare function interpolate(channel: ScaleChannel, type: Type): Scale['interpolate'];
 export declare function nice(scaleType: ScaleType, channel: ScaleChannel, specifiedDomain: Domain, domainMin: Scale['domainMin'], domainMax: Scale['domainMax'], fieldOrDatumDef: TypedFieldDef<string> | ScaleDatumDef): boolean | TimeInterval;
-export declare function padding(channel: ScaleChannel, scaleType: ScaleType, scaleConfig: ScaleConfig<SignalRef>, fieldOrDatumDef: TypedFieldDef<string> | ScaleDatumDef, markDef: MarkDef<Mark, SignalRef>, barConfig: RectConfig<SignalRef>): any;
-export declare function paddingInner(paddingValue: number | SignalRef, channel: ScaleChannel, mark: Mark, scaleType: ScaleType, scaleConfig: ScaleConfig<SignalRef>, hasNestedOffsetScale?: boolean): any;
-export declare function paddingOuter(paddingValue: number | SignalRef, channel: ScaleChannel, scaleType: ScaleType, paddingInnerValue: number | SignalRef, scaleConfig: ScaleConfig<SignalRef>, hasNestedOffsetScale?: boolean): any;
-export declare function reverse(scaleType: ScaleType, sort: Sort<string>, channel: ScaleChannel, scaleConfig: ScaleConfig<SignalRef>): any;
+export declare function padding(channel: ScaleChannel, scaleType: ScaleType, scaleConfig: ScaleConfig<SignalRef>, fieldOrDatumDef: TypedFieldDef<string> | ScaleDatumDef, markDef: MarkDef<Mark, SignalRef>, barConfig: RectConfig<SignalRef>): number | SignalRef;
+export declare function paddingInner(paddingValue: number | SignalRef, channel: ScaleChannel, mark: Mark, scaleType: ScaleType, scaleConfig: ScaleConfig<SignalRef>, hasNestedOffsetScale?: boolean): number | SignalRef;
+export declare function paddingOuter(paddingValue: number | SignalRef, channel: ScaleChannel, scaleType: ScaleType, paddingInnerValue: number | SignalRef, scaleConfig: ScaleConfig<SignalRef>, hasNestedOffsetScale?: boolean): number | SignalRef;
+export declare function reverse(scaleType: ScaleType, sort: Sort<string>, channel: ScaleChannel, scaleConfig: ScaleConfig<SignalRef>): boolean | SignalRef;
 export declare function zero(channel: ScaleChannel, fieldDef: TypedFieldDef<string> | ScaleDatumDef, specifiedDomain: Domain, markDef: MarkDef, scaleType: ScaleType, scaleConfig: ScaleConfig<SignalRef>, hasSecondaryRangeChannel: boolean): boolean;
 //# sourceMappingURL=properties.d.ts.map

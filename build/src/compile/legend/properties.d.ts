@@ -27,7 +27,9 @@ export interface LegendRuleParams {
 export declare const legendRules: {
     [k in keyof LegendComponentProps]?: (params: LegendRuleParams) => LegendComponentProps[k];
 };
-export declare function values(legend: LegendInternal, fieldOrDatumDef: TypedFieldDef<string> | DatumDef): any;
+export declare function values(legend: LegendInternal, fieldOrDatumDef: TypedFieldDef<string> | DatumDef): SignalRef | (string | number | boolean | import("../../datetime").DateTime | {
+    signal: string;
+})[];
 export declare function defaultSymbolType(mark: Mark, channel: NonPositionScaleChannel, shapeChannelDef: Encoding<string>['shape'], markShape: SymbolShape | SignalRef): SymbolShape | SignalRef;
 export declare function clipHeight(legendType: LegendType): number;
 export declare function getLegendType(params: {
@@ -54,6 +56,8 @@ export declare function defaultGradientLength({ legendConfig, model, direction, 
     orient: LegendOrient;
     model: Model;
     legendConfig: LegendConfig<SignalRef>;
-}): any;
+}): number | {
+    signal: string;
+};
 export declare function defaultLabelOverlap(scaleType: ScaleType): LabelOverlap;
 //# sourceMappingURL=properties.d.ts.map

@@ -430,7 +430,7 @@ export declare function resetTitleFormatter(): void;
 export declare function title(fieldOrDatumDef: TypedFieldDef<string> | SecondaryFieldDef<string> | DatumDef, config: Config, { allowDisabling, includeDefault }: {
     allowDisabling: boolean;
     includeDefault?: boolean;
-}): any;
+}): SignalRef | Text;
 export declare function getGuide(fieldDef: TypedFieldDef<string> | SecondaryFieldDef<string> | DatumDef): Guide;
 export declare function defaultTitle(fieldDef: FieldDefBase<string>, config: Config): string;
 export declare function getFormatMixins(fieldDef: TypedFieldDef<string> | DatumDef): {
@@ -486,7 +486,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      *
      * __See also:__ [`aggregate`](https://vega.github.io/vega-lite/docs/aggregate.html) documentation.
      */
-    aggregate?: any;
+    aggregate?: Aggregate | CompositeAggregate;
     /**
      * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#bin-parameters), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
      *
@@ -506,7 +506,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      * @maximum 1
      */
     bandPosition?: number;
-    title?: any;
+    title?: SignalRef | Text;
 } | {
     /**
      * __Required.__ A string defining the name of the field from which to pull a data value
@@ -538,7 +538,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      *
      * __See also:__ [`aggregate`](https://vega.github.io/vega-lite/docs/aggregate.html) documentation.
      */
-    aggregate?: any;
+    aggregate?: Aggregate | CompositeAggregate;
     /**
      * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#bin-parameters), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
      *
@@ -558,7 +558,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      * @maximum 1
      */
     bandPosition?: number;
-    title?: any;
+    title?: SignalRef | Text;
     /**
      * The type of measurement (`"quantitative"`, `"temporal"`, `"ordinal"`, or `"nominal"`) for the encoded field or constant value (`datum`).
      * It can also be a `"geojson"` type for encoding ['geoshape'](https://vega.github.io/vega-lite/docs/geoshape.html).
@@ -625,7 +625,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      *
      * __See also:__ [`aggregate`](https://vega.github.io/vega-lite/docs/aggregate.html) documentation.
      */
-    aggregate?: any;
+    aggregate?: Aggregate | CompositeAggregate;
     /**
      * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#bin-parameters), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
      *
@@ -645,7 +645,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      * @maximum 1
      */
     bandPosition?: number;
-    title?: any;
+    title?: SignalRef | Text;
     /**
      * The type of measurement (`"quantitative"`, `"temporal"`, `"ordinal"`, or `"nominal"`) for the encoded field or constant value (`datum`).
      * It can also be a `"geojson"` type for encoding ['geoshape'](https://vega.github.io/vega-lite/docs/geoshape.html).
@@ -712,7 +712,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      *
      * __See also:__ [`aggregate`](https://vega.github.io/vega-lite/docs/aggregate.html) documentation.
      */
-    aggregate?: any;
+    aggregate?: Aggregate | CompositeAggregate;
     /**
      * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#bin-parameters), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
      *
@@ -732,7 +732,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      * @maximum 1
      */
     bandPosition?: number;
-    title?: any;
+    title?: SignalRef | Text;
     /**
      * The type of measurement (`"quantitative"`, `"temporal"`, `"ordinal"`, or `"nominal"`) for the encoded field or constant value (`datum`).
      * It can also be a `"geojson"` type for encoding ['geoshape'](https://vega.github.io/vega-lite/docs/geoshape.html).
@@ -766,9 +766,9 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
     type?: StandardType;
 } | {
     header: {
-        labelOrient: any;
-        titleOrient: any;
-        titleAnchor?: TitleAnchor;
+        labelOrient: import("vega").Orient;
+        titleOrient: import("vega").Orient;
+        titleAnchor?: import("vega").TitleAnchor;
         titleAlign?: any;
         titleAngle?: number;
         titleBaseline?: any;
@@ -783,7 +783,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
         labels?: boolean;
         labelAlign?: any;
         labelBaseline?: any;
-        labelAnchor?: TitleAnchor;
+        labelAnchor?: import("vega").TitleAnchor;
         labelExpr?: string;
         labelAngle?: number;
         labelColor?: any;
@@ -815,7 +815,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
          * - `"number"` for quantitative fields as well as ordinal and nominal fields without `timeUnit`.
          */
         formatType?: string;
-        title?: any;
+        title?: SignalRef | Text;
     };
     sort?: SortOrder | import("./sort").SortArray | import("./sort").EncodingSortField<string>;
     /**
@@ -848,7 +848,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      *
      * __See also:__ [`aggregate`](https://vega.github.io/vega-lite/docs/aggregate.html) documentation.
      */
-    aggregate?: any;
+    aggregate?: Aggregate | CompositeAggregate;
     /**
      * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#bin-parameters), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
      *
@@ -868,7 +868,7 @@ export declare function initFieldDef(fd: FieldDef<string, any>, channel: Extende
      * @maximum 1
      */
     bandPosition?: number;
-    title?: any;
+    title?: SignalRef | Text;
     /**
      * The type of measurement (`"quantitative"`, `"temporal"`, `"ordinal"`, or `"nominal"`) for the encoded field or constant value (`datum`).
      * It can also be a `"geojson"` type for encoding ['geoshape'](https://vega.github.io/vega-lite/docs/geoshape.html).

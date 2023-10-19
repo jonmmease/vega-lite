@@ -31,7 +31,7 @@ export declare function formatCustomType({ fieldOrDatumDef, format, formatType, 
 export declare function guideFormat(fieldOrDatumDef: FieldDef<string> | DatumDef<string>, type: Type, format: string | Dict<unknown>, formatType: string | SignalRef, config: Config, omitTimeFormatConfig: boolean): string | {
     signal: string;
 };
-export declare function guideFormatType(formatType: string | SignalRef, fieldOrDatumDef: FieldDef<string> | DatumDef<string>, scaleType: ScaleType): any;
+export declare function guideFormatType(formatType: string | SignalRef, fieldOrDatumDef: FieldDef<string> | DatumDef<string>, scaleType: ScaleType): "time" | "number" | SignalRef | "utc";
 /**
  * Returns number format for a fieldDef.
  */

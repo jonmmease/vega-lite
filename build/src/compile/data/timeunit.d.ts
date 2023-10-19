@@ -1,3 +1,5 @@
+import { TimeUnitTransform as VgTimeUnitTransform } from 'vega';
+import { FormulaTransform as VgFormulaTransform } from 'vega';
 import { FieldName } from '../../channeldef';
 import { TimeUnitParams } from '../../timeunit';
 import { TimeUnitTransform } from '../../transform';
@@ -29,7 +31,7 @@ export declare class TimeUnitNode extends DataFlowNode {
     producedFields(): Set<string>;
     dependentFields(): Set<string>;
     hash(): string;
-    assemble(): any[];
+    assemble(): (VgFormulaTransform | VgTimeUnitTransform)[];
 }
 export declare const OFFSETTED_RECT_START_SUFFIX = "offsetted_rect_start";
 export declare const OFFSETTED_RECT_END_SUFFIX = "offsetted_rect_end";

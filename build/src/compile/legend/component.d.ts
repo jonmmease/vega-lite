@@ -7,7 +7,7 @@ export type LegendComponentProps = VgLegend & {
     selections?: string[];
     disable?: boolean;
 };
-export declare const LEGEND_COMPONENT_PROPERTIES: string[];
+export declare const LEGEND_COMPONENT_PROPERTIES: ("labelExpr" | "disable" | keyof VgLegend | "selections")[];
 export declare class LegendComponent extends Split<LegendComponentProps> {
 }
 export type LegendComponentIndex = Partial<Record<NonPositionScaleChannel, LegendComponent>>;

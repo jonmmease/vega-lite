@@ -1,4 +1,4 @@
-import type { AggregateOp, BandScale, BaseScale, BinOrdinalScale, ColorValueRef, Compare as VgCompare, ExprRef as VgExprRef, GeoShapeTransform as VgGeoShapeTransform, IdentityScale, LayoutAlign, LinearScale, LogScale, Mark, NumericValueRef, OrdinalScale, PointScale, PowScale, ProjectionType, QuantileScale, QuantizeScale, RangeBand, RangeRaw, RangeScheme, ScaleData, ScaleDataRef, ScaledValueRef, ScaleMultiDataRef, ScaleMultiFieldsRef, SequentialScale, SignalRef, SortField as VgSortField, SqrtScale, SymLogScale, ThresholdScale, TimeInterval, TimeIntervalStep, TimeScale, Title as VgTitle, Transforms as VgTransform, UnionSortField as VgUnionSortField } from 'vega';
+import type { AggregateOp, BandScale, BaseScale, BinOrdinalScale, ColorValueRef, Compare as VgCompare, ExprRef as VgExprRef, GeoShapeTransform as VgGeoShapeTransform, IdentityScale, LayoutAlign, LinearScale, LogScale, Mark, MarkConfig, NumericValueRef, OrdinalScale, PointScale, PowScale, ProjectionType, QuantileScale, QuantizeScale, RangeBand, RangeRaw, RangeScheme, ScaleData, ScaleDataRef, ScaledValueRef, ScaleMultiDataRef, ScaleMultiFieldsRef, SequentialScale, SignalRef, SortField as VgSortField, SqrtScale, SymLogScale, ThresholdScale, TimeInterval, TimeIntervalStep, TimeScale, Title as VgTitle, Transforms as VgTransform, UnionSortField as VgUnionSortField } from 'vega';
 import { Value } from './channeldef';
 import { ExprRef } from './expr';
 import { SortOrder } from './sort';
@@ -100,7 +100,7 @@ export type VgEncodeEntry = Partial<Record<VgEncodeChannel, VgValueRef | (VgValu
     test?: string;
 })[]>>;
 export type VgPostEncodingTransform = VgGeoShapeTransform;
-export declare const VG_MARK_CONFIGS: string[];
+export declare const VG_MARK_CONFIGS: (keyof MarkConfig)[];
 export declare const VG_MARK_INDEX: Flag<Mark['type']>;
 export declare const VG_CORNERRADIUS_CHANNELS: readonly ["cornerRadius", "cornerRadiusTopLeft", "cornerRadiusTopRight", "cornerRadiusBottomLeft", "cornerRadiusBottomRight"];
 export interface VgComparator {

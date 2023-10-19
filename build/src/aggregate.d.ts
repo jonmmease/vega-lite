@@ -16,11 +16,11 @@ export type Aggregate = NonArgAggregateOp | ArgmaxDef | ArgminDef;
 export declare function isArgminDef(a: Aggregate | string): a is ArgminDef;
 export declare function isArgmaxDef(a: Aggregate | string): a is ArgmaxDef;
 export declare function isAggregateOp(a: string | ArgminDef | ArgmaxDef): a is AggregateOp;
-export declare const COUNTING_OPS: ReadonlySet<any>;
+export declare const COUNTING_OPS: ReadonlySet<NonArgAggregateOp>;
 export declare function isCountingAggregateOp(aggregate?: string | Aggregate): boolean;
 export declare function isMinMaxOp(aggregate?: Aggregate | string): boolean;
 /** Additive-based aggregation operations. These can be applied to stack. */
-export declare const SUM_OPS: ReadonlySet<any>;
+export declare const SUM_OPS: ReadonlySet<NonArgAggregateOp>;
 /**
  * Aggregation operators that always produce values within the range [domainMin, domainMax].
  */

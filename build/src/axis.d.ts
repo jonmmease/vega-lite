@@ -208,7 +208,7 @@ export interface AxisEncoding {
 }
 export declare const COMMON_AXIS_PROPERTIES_INDEX: Flag<keyof (VgAxis | Axis<any>)>;
 export declare function isAxisProperty(prop: string): prop is keyof Axis<any>;
-export declare const AXIS_PROPERTIES: string[];
+export declare const AXIS_PROPERTIES: (keyof Axis<any>)[];
 export interface AxisConfigMixins<ES extends ExprRef | SignalRef = ExprRef | SignalRef> {
     /**
      * Axis configuration, which determines default properties for all `x` and `y` [axes](https://vega.github.io/vega-lite/docs/axis.html). For a full list of axis configuration options, please see the [corresponding section of the axis documentation](https://vega.github.io/vega-lite/docs/axis.html#config).

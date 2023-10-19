@@ -1,3 +1,4 @@
+import { FormulaTransform as VgFormulaTransform, ImputeTransform as VgImputeTransform, WindowTransform as VgWindowTransform } from 'vega';
 import { ImputeTransform } from '../../transform';
 import { UnitModel } from '../unit';
 import { DataFlowNode } from './dataflow';
@@ -11,6 +12,6 @@ export declare class ImputeNode extends DataFlowNode {
     static makeFromTransform(parent: DataFlowNode, imputeTransform: ImputeTransform): ImputeNode;
     static makeFromEncoding(parent: DataFlowNode, model: UnitModel): ImputeNode;
     hash(): string;
-    assemble(): any[];
+    assemble(): (VgFormulaTransform | VgImputeTransform | VgWindowTransform)[];
 }
 //# sourceMappingURL=impute.d.ts.map

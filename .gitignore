@@ -4,8 +4,6 @@ _site/
 .DS_Store
 .jekyll-metadata
 .yarnclean
-build/*
-!build/src
 coverage
 examples/all-examples.json
 node_modules

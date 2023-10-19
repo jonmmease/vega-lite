@@ -1,4 +1,4 @@
-import { Binding, Expr } from 'vega';
+import { Binding, Expr, InitSignal, NewSignal } from 'vega';
 import { TopLevelSelectionParameter } from './selection';
 export type ParameterName = string;
 export interface VariableParameter {
@@ -21,5 +21,5 @@ export interface VariableParameter {
      */
     bind?: Binding;
 }
-export declare function assembleParameterSignals(params: (VariableParameter | TopLevelSelectionParameter)[]): any[];
+export declare function assembleParameterSignals(params: (VariableParameter | TopLevelSelectionParameter)[]): (NewSignal | InitSignal)[];
 //# sourceMappingURL=parameter.d.ts.map

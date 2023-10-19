@@ -73,16 +73,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     x?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    y?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    shape?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     x2?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     xc?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    y?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     y2?: VgValueRef | (VgValueRef & {
@@ -91,31 +88,22 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     yc?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeCap?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     strokeDash?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeDashOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeMiterLimit?: VgValueRef | (VgValueRef & {
+    strokeCap?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeJoin?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeOffset?: VgValueRef | (VgValueRef & {
+    strokeMiterLimit?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeForeground?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    innerRadius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    outerRadius?: VgValueRef | (VgValueRef & {
+    tooltip?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     startAngle?: VgValueRef | (VgValueRef & {
@@ -124,49 +112,31 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     endAngle?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    innerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    outerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    cornerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    orient?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     interpolate?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     tension?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    orient?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    align?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    baseline?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    ellipsis?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    limit?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dx?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dy?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    radius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    theta?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    tooltip?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    href?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     defined?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    cornerRadius?: VgValueRef | (VgValueRef & {
+    strokeForeground?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    strokeOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     cornerRadiusTopLeft?: VgValueRef | (VgValueRef & {
@@ -181,18 +151,50 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     cornerRadiusBottomLeft?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    baseline?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    align?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     scaleX?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     scaleY?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    shape?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dx?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dy?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    ellipsis?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    limit?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    radius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    theta?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    href?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     ariaRoleDescription?: undefined;
-    aria?: any;
+    aria?: true | import("vega-typings").SignalRef;
 } | {
-    description: any;
+    description: import("vega-typings").SignalRef | {
+        value: string;
+    };
     ariaRoleDescription?: undefined;
-    aria?: any;
+    aria?: true | import("vega-typings").SignalRef;
     fill?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
@@ -256,16 +258,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     x?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    y?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    shape?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     x2?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     xc?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    y?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     y2?: VgValueRef | (VgValueRef & {
@@ -274,31 +273,22 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     yc?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeCap?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     strokeDash?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeDashOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeMiterLimit?: VgValueRef | (VgValueRef & {
+    strokeCap?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeJoin?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeOffset?: VgValueRef | (VgValueRef & {
+    strokeMiterLimit?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeForeground?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    innerRadius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    outerRadius?: VgValueRef | (VgValueRef & {
+    tooltip?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     startAngle?: VgValueRef | (VgValueRef & {
@@ -307,49 +297,31 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     endAngle?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    innerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    outerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    cornerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    orient?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     interpolate?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     tension?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    orient?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    align?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    baseline?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    ellipsis?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    limit?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dx?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dy?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    radius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    theta?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    tooltip?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    href?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     defined?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    cornerRadius?: VgValueRef | (VgValueRef & {
+    strokeForeground?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    strokeOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     cornerRadiusTopLeft?: VgValueRef | (VgValueRef & {
@@ -364,10 +336,40 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     cornerRadiusBottomLeft?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    baseline?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    align?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     scaleX?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     scaleY?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    shape?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dx?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dy?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    ellipsis?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    limit?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    radius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    theta?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    href?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
 } | {
@@ -434,16 +436,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     x?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    y?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    shape?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     x2?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     xc?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    y?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     y2?: VgValueRef | (VgValueRef & {
@@ -452,31 +451,22 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     yc?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeCap?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     strokeDash?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeDashOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeMiterLimit?: VgValueRef | (VgValueRef & {
+    strokeCap?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeJoin?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeOffset?: VgValueRef | (VgValueRef & {
+    strokeMiterLimit?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeForeground?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    innerRadius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    outerRadius?: VgValueRef | (VgValueRef & {
+    tooltip?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     startAngle?: VgValueRef | (VgValueRef & {
@@ -485,49 +475,31 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     endAngle?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    innerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    outerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    cornerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    orient?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     interpolate?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     tension?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    orient?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    align?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    baseline?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    ellipsis?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    limit?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dx?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dy?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    radius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    theta?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    tooltip?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    href?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     defined?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    cornerRadius?: VgValueRef | (VgValueRef & {
+    strokeForeground?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    strokeOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     cornerRadiusTopLeft?: VgValueRef | (VgValueRef & {
@@ -542,22 +514,54 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     cornerRadiusBottomLeft?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    baseline?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    align?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     scaleX?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     scaleY?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    shape?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dx?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dy?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    ellipsis?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    limit?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    radius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    theta?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    href?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     ariaRoleDescription: {
-        value: any;
+        value: string | import("vega-typings").SignalRef;
     };
-    aria?: any;
+    aria?: true | import("vega-typings").SignalRef;
 } | {
-    description: any;
-    ariaRoleDescription: {
-        value: any;
+    description: import("vega-typings").SignalRef | {
+        value: string;
     };
-    aria?: any;
+    ariaRoleDescription: {
+        value: string | import("vega-typings").SignalRef;
+    };
+    aria?: true | import("vega-typings").SignalRef;
     fill?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
@@ -621,16 +625,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     x?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    y?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    shape?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     x2?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     xc?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    y?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     y2?: VgValueRef | (VgValueRef & {
@@ -639,31 +640,22 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     yc?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeCap?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     strokeDash?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeDashOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeMiterLimit?: VgValueRef | (VgValueRef & {
+    strokeCap?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeJoin?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeOffset?: VgValueRef | (VgValueRef & {
+    strokeMiterLimit?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeForeground?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    innerRadius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    outerRadius?: VgValueRef | (VgValueRef & {
+    tooltip?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     startAngle?: VgValueRef | (VgValueRef & {
@@ -672,49 +664,31 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     endAngle?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    innerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    outerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    cornerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    orient?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     interpolate?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     tension?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    orient?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    align?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    baseline?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    ellipsis?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    limit?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dx?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dy?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    radius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    theta?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    tooltip?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    href?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     defined?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    cornerRadius?: VgValueRef | (VgValueRef & {
+    strokeForeground?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    strokeOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     cornerRadiusTopLeft?: VgValueRef | (VgValueRef & {
@@ -729,10 +703,40 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     cornerRadiusBottomLeft?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    baseline?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    align?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     scaleX?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     scaleY?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    shape?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dx?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dy?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    ellipsis?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    limit?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    radius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    theta?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    href?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
 } | {
@@ -799,16 +803,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     x?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    y?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    shape?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     x2?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     xc?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    y?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     y2?: VgValueRef | (VgValueRef & {
@@ -817,70 +818,19 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     yc?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeCap?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     strokeDash?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeDashOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeMiterLimit?: VgValueRef | (VgValueRef & {
+    strokeCap?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeJoin?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeOffset?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    strokeForeground?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    innerRadius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    outerRadius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    startAngle?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    endAngle?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    interpolate?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    tension?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    orient?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    align?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    baseline?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    ellipsis?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    limit?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dx?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dy?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    radius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    theta?: VgValueRef | (VgValueRef & {
+    strokeMiterLimit?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     tooltip: VgValueRef | (VgValueRef & {
@@ -888,13 +838,37 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     })[] | {
         signal: string;
     };
-    href?: VgValueRef | (VgValueRef & {
+    startAngle?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    endAngle?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    innerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    outerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    cornerRadius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    orient?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    interpolate?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    tension?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     defined?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    cornerRadius?: VgValueRef | (VgValueRef & {
+    strokeForeground?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    strokeOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     cornerRadiusTopLeft?: VgValueRef | (VgValueRef & {
@@ -909,18 +883,50 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     cornerRadiusBottomLeft?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    baseline?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    align?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     scaleX?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     scaleY?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    shape?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dx?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dy?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    ellipsis?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    limit?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    radius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    theta?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    href?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     ariaRoleDescription?: undefined;
-    aria?: any;
+    aria?: true | import("vega-typings").SignalRef;
 } | {
-    description: any;
+    description: import("vega-typings").SignalRef | {
+        value: string;
+    };
     ariaRoleDescription?: undefined;
-    aria?: any;
+    aria?: true | import("vega-typings").SignalRef;
     fill?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
@@ -984,16 +990,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     x?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    y?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    shape?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     x2?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     xc?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    y?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     y2?: VgValueRef | (VgValueRef & {
@@ -1002,25 +1005,30 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     yc?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeCap?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     strokeDash?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeDashOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeMiterLimit?: VgValueRef | (VgValueRef & {
+    strokeCap?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeJoin?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeOffset?: VgValueRef | (VgValueRef & {
+    strokeMiterLimit?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeForeground?: VgValueRef | (VgValueRef & {
+    tooltip: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[] | {
+        signal: string;
+    };
+    startAngle?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    endAngle?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     innerRadius?: VgValueRef | (VgValueRef & {
@@ -1029,10 +1037,10 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     outerRadius?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    startAngle?: VgValueRef | (VgValueRef & {
+    cornerRadius?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    endAngle?: VgValueRef | (VgValueRef & {
+    orient?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     interpolate?: VgValueRef | (VgValueRef & {
@@ -1041,45 +1049,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     tension?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    orient?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    align?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    baseline?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    ellipsis?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    limit?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dx?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dy?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    radius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    theta?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    tooltip: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[] | {
-        signal: string;
-    };
-    href?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     defined?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    cornerRadius?: VgValueRef | (VgValueRef & {
+    strokeForeground?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    strokeOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     cornerRadiusTopLeft?: VgValueRef | (VgValueRef & {
@@ -1094,10 +1070,40 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     cornerRadiusBottomLeft?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    baseline?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    align?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     scaleX?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     scaleY?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    shape?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dx?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dy?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    ellipsis?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    limit?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    radius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    theta?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    href?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
 } | {
@@ -1164,16 +1170,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     x?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    y?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    shape?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     x2?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     xc?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    y?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     y2?: VgValueRef | (VgValueRef & {
@@ -1182,25 +1185,30 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     yc?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeCap?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     strokeDash?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeDashOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeMiterLimit?: VgValueRef | (VgValueRef & {
+    strokeCap?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeJoin?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeOffset?: VgValueRef | (VgValueRef & {
+    strokeMiterLimit?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeForeground?: VgValueRef | (VgValueRef & {
+    tooltip: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[] | {
+        signal: string;
+    };
+    startAngle?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    endAngle?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     innerRadius?: VgValueRef | (VgValueRef & {
@@ -1209,10 +1217,10 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     outerRadius?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    startAngle?: VgValueRef | (VgValueRef & {
+    cornerRadius?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    endAngle?: VgValueRef | (VgValueRef & {
+    orient?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     interpolate?: VgValueRef | (VgValueRef & {
@@ -1221,45 +1229,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     tension?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    orient?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    align?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    baseline?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    ellipsis?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    limit?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dx?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dy?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    radius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    theta?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    tooltip: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[] | {
-        signal: string;
-    };
-    href?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     defined?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    cornerRadius?: VgValueRef | (VgValueRef & {
+    strokeForeground?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    strokeOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     cornerRadiusTopLeft?: VgValueRef | (VgValueRef & {
@@ -1274,22 +1250,54 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     cornerRadiusBottomLeft?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    baseline?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    align?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     scaleX?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     scaleY?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    shape?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dx?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dy?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    ellipsis?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    limit?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    radius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    theta?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    href?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     ariaRoleDescription: {
-        value: any;
+        value: string | import("vega-typings").SignalRef;
     };
-    aria?: any;
+    aria?: true | import("vega-typings").SignalRef;
 } | {
-    description: any;
-    ariaRoleDescription: {
-        value: any;
+    description: import("vega-typings").SignalRef | {
+        value: string;
     };
-    aria?: any;
+    ariaRoleDescription: {
+        value: string | import("vega-typings").SignalRef;
+    };
+    aria?: true | import("vega-typings").SignalRef;
     fill?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
@@ -1353,16 +1361,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     x?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    y?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    shape?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     x2?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     xc?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    y?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     y2?: VgValueRef | (VgValueRef & {
@@ -1371,25 +1376,30 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     yc?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeCap?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     strokeDash?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeDashOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeMiterLimit?: VgValueRef | (VgValueRef & {
+    strokeCap?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     strokeJoin?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeOffset?: VgValueRef | (VgValueRef & {
+    strokeMiterLimit?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    strokeForeground?: VgValueRef | (VgValueRef & {
+    tooltip: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[] | {
+        signal: string;
+    };
+    startAngle?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    endAngle?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     innerRadius?: VgValueRef | (VgValueRef & {
@@ -1398,10 +1408,10 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     outerRadius?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    startAngle?: VgValueRef | (VgValueRef & {
+    cornerRadius?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    endAngle?: VgValueRef | (VgValueRef & {
+    orient?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     interpolate?: VgValueRef | (VgValueRef & {
@@ -1410,45 +1420,13 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     tension?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    orient?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    align?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    baseline?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    ellipsis?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    limit?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dx?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    dy?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    radius?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    theta?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
-    tooltip: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[] | {
-        signal: string;
-    };
-    href?: VgValueRef | (VgValueRef & {
-        test?: string;
-    })[];
     defined?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
-    cornerRadius?: VgValueRef | (VgValueRef & {
+    strokeForeground?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    strokeOffset?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     cornerRadiusTopLeft?: VgValueRef | (VgValueRef & {
@@ -1463,10 +1441,40 @@ export declare function baseEncodeEntry(model: UnitModel, ignore: Ignore): {
     cornerRadiusBottomLeft?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
+    baseline?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    align?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
     scaleX?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
     scaleY?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    shape?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dx?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    dy?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    ellipsis?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    limit?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    radius?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    theta?: VgValueRef | (VgValueRef & {
+        test?: string;
+    })[];
+    href?: VgValueRef | (VgValueRef & {
         test?: string;
     })[];
 };

@@ -33,7 +33,7 @@ export declare const axisRules: {
  */
 export declare function defaultGrid(scaleType: ScaleType, fieldDef: TypedFieldDef<string> | DatumDef): boolean;
 export declare function gridScale(model: UnitModel, channel: PositionScaleChannel): string;
-export declare function getLabelAngle(fieldOrDatumDef: PositionFieldDef<string> | PositionDatumDef<string>, axis: AxisInternal, channel: PositionScaleChannel, styleConfig: StyleConfigIndex<SignalRef>, axisConfigs?: AxisConfigs): any;
+export declare function getLabelAngle(fieldOrDatumDef: PositionFieldDef<string> | PositionDatumDef<string>, axis: AxisInternal, channel: PositionScaleChannel, styleConfig: StyleConfigIndex<SignalRef>, axisConfigs?: AxisConfigs): number | SignalRef;
 export declare function normalizeAngleExpr(angle: SignalRef): string;
 export declare function defaultLabelBaseline(angle: number | SignalRef, orient: AxisOrient | SignalRef, channel: 'x' | 'y', alwaysIncludeMiddle?: boolean): "bottom" | "middle" | "top" | {
     signal: string;
@@ -53,7 +53,9 @@ export declare function defaultTickCount({ fieldOrDatumDef, scaleType, size, val
 export declare function defaultTickMinStep({ format, fieldOrDatumDef }: Pick<AxisRuleParams, 'format' | 'fieldOrDatumDef'>): 1 | {
     signal: string;
 };
-export declare function getFieldDefTitle(model: UnitModel, channel: 'x' | 'y'): any;
-export declare function values(axis: AxisInternal, fieldOrDatumDef: TypedFieldDef<string> | DatumDef): any;
+export declare function getFieldDefTitle(model: UnitModel, channel: 'x' | 'y'): SignalRef | import("vega").Text;
+export declare function values(axis: AxisInternal, fieldOrDatumDef: TypedFieldDef<string> | DatumDef): SignalRef | (string | number | boolean | import("../../datetime").DateTime | {
+    signal: string;
+})[];
 export declare function defaultZindex(mark: Mark, fieldDef: TypedFieldDef<string> | DatumDef): 0 | 1;
 //# sourceMappingURL=properties.d.ts.map

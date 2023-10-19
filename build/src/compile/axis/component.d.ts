@@ -7,7 +7,7 @@ export type AxisComponentProps = Omit<VgAxis, 'title' | ConditionalAxisProp> & O
     labelExpr: string;
     disable: boolean;
 };
-export declare const AXIS_COMPONENT_PROPERTIES: string[];
+export declare const AXIS_COMPONENT_PROPERTIES: ("values" | "offset" | "grid" | "position" | "scale" | "translate" | "title" | "labels" | "description" | "encode" | "zindex" | "aria" | "orient" | "gridScale" | "format" | "formatType" | "tickCount" | "tickMinStep" | "titleAlign" | "titleAnchor" | "titleBaseline" | "titleColor" | "titleFont" | "titleFontSize" | "titleFontStyle" | "titleFontWeight" | "titleLimit" | "titleLineHeight" | "titleOpacity" | "titlePadding" | "labelAlign" | "labelBaseline" | "labelColor" | "labelFont" | "labelFontSize" | "labelFontStyle" | "labelFontWeight" | "labelLimit" | "labelOpacity" | "labelPadding" | "labelOffset" | "labelOverlap" | "labelSeparation" | "domain" | "ticks" | "gridColor" | "gridDash" | "gridDashOffset" | "gridOpacity" | "gridWidth" | "tickColor" | "tickDash" | "tickDashOffset" | "tickOpacity" | "tickSize" | "tickWidth" | "minExtent" | "maxExtent" | "bandPosition" | "titleAngle" | "titleX" | "titleY" | "domainCap" | "domainDash" | "domainDashOffset" | "domainColor" | "domainOpacity" | "domainWidth" | "tickBand" | "tickCap" | "tickExtra" | "tickOffset" | "tickRound" | "gridCap" | "labelBound" | "labelFlush" | "labelFlushOffset" | "labelLineHeight" | "labelAngle" | "labelExpr" | "disable")[];
 export declare class AxisComponent extends Split<AxisComponentProps> {
     readonly explicit: Partial<AxisComponentProps>;
     readonly implicit: Partial<AxisComponentProps>;

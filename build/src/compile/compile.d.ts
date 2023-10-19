@@ -1,4 +1,4 @@
-import { LoggerInterface } from 'vega';
+import { LoggerInterface, Spec as VgSpec } from 'vega';
 import * as vlFieldDef from '../channeldef';
 import { Config } from '../config';
 import { LayoutSizeMixins, TopLevel, TopLevelSpec } from '../spec';
