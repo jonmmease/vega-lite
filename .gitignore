@@ -5,6 +5,7 @@ _site/
 .jekyll-metadata
 .yarnclean
 build/*
+!build/src
 coverage
 examples/all-examples.json
 node_modules
